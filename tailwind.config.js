@@ -5,7 +5,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      
       colors: {
         blue: {
           50: "#f2f9fe",
