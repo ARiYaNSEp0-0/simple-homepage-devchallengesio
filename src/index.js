@@ -1,3 +1,4 @@
+import { closeMobileMenu, openMobileMenu } from "./js/helpers/sidebar";
 import {
   processChangeThemeMode,
   processInitialThemeMode,
@@ -29,13 +30,11 @@ const main = () => {
   );
 
   openMenuButton.addEventListener("click", () => {
-    mobileMenu.classList.remove("hidden");
-    mobileMenu.classList.add("block");
+    openMobileMenu(mobileMenu);
   });
 
   closeMenuButton.addEventListener("click", () => {
-    mobileMenu.classList.remove("block");
-    mobileMenu.classList.add("hidden");
+    closeMobileMenu(mobileMenu);
   });
 };
 
