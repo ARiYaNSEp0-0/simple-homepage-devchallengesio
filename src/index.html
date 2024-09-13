@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="en" class="dark h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,9 @@
     />
     <link rel="stylesheet" href="./styles/tailwind.css" />
   </head>
-  <body class="h-full bg-blue-50 text-base font-semibold text-stone-400">
+  <body
+    class="h-full bg-blue-50 text-base font-semibold text-blue-950/60 dark:bg-blue-950 dark:text-blue-50/50"
+  >
     <header>
       <nav class="mx-auto max-w-[1136px] px-6 lg:px-8 xl:px-0">
         <div
@@ -48,18 +50,18 @@
             <a href="#">
               <picture>
                 <img
-                  src="./images/logos/alarado-logo-light.svg"
+                  src="./images/logos/alarado-logo-dark.svg"
                   alt="Two rotated squares blue and green with alarado text for alarado logo."
                 />
               </picture>
             </a>
           </div>
           <div>
-            <ul class="hidden lg:flex lg:gap-10">
+            <ul class="hidden lg:flex lg:gap-10 xl:ml-8">
               <li>
                 <a
                   href="#"
-                  class="flex h-12 items-center text-sm text-blue-950"
+                  class="flex h-12 items-center text-sm text-blue-950 dark:text-white"
                   aria-current="page"
                   >About us</a
                 >
@@ -67,21 +69,21 @@
               <li>
                 <a
                   href="#"
-                  class="flex h-12 items-center text-sm text-blue-950/60 hover:text-blue-950"
+                  class="flex h-12 items-center text-sm hover:text-blue-950 dark:hover:text-white"
                   >Product</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="flex h-12 items-center text-sm text-blue-950/60 hover:text-blue-950"
+                  class="flex h-12 items-center text-sm hover:text-blue-950 dark:hover:text-white"
                   >Resource</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="flex h-12 items-center text-sm text-blue-950/60 hover:text-blue-950"
+                  class="flex h-12 items-center text-sm hover:text-blue-950 dark:hover:text-white"
                   >Contact</a
                 >
               </li>
@@ -256,6 +258,97 @@
           </div>
         </div>
       </nav>
+
+      <div
+        class="mx-auto max-w-[1136px] space-y-16 px-6 py-16 sm:space-y-[153px] sm:px-[14px] lg:space-y-[92px] lg:px-8 xl:flex xl:flex-row-reverse xl:items-center xl:gap-24 xl:space-y-0 xl:px-0 xl:pb-0"
+      >
+        <div
+          class="mx-auto max-w-[560px] xl:translate-x-[5px] xl:translate-y-[5px]"
+        >
+          <picture>
+            <img
+              src="./images/hero-image-simple-homepage.png"
+              alt=""
+              class="object-cover"
+            />
+          </picture>
+        </div>
+
+        <div class="sm:pl-[58px] sm:pr-24 lg:pl-[80px] xl:px-0">
+          <div>
+            <p
+              class="text-sm uppercase tracking-[-0.01em] text-blue-900 dark:text-white"
+            >
+              <span class="mr-1 inline-block size-3.5 align-middle"
+                ><img
+                  src="./images/icons/smiling-face-with-sunglasses_1f60e.png"
+                  alt=""
+              /></span>
+              Simple way to communicate
+            </p>
+            <h1
+              class="mt-[12px] text-4xl font-bold leading-[1.2] text-blue-900 sm:text-[63px] sm:leading-[1.53] dark:text-white"
+            >
+              Actions for Accessibility in Design
+            </h1>
+            <p class="mt-[32px] max-w-[45ch] text-lg tracking-[-0.01em]">
+              The fastest way to build and deploy websites with resusable
+              components.
+            </p>
+          </div>
+          <div
+            class="mt-[20px] flex flex-col gap-8 sm:flex-row sm:items-center"
+          >
+            <a
+              href="#"
+              class="flex items-center justify-center rounded-[12px] bg-blue-700 px-[2em] py-[.85em] text-sm uppercase tracking-wide text-white transition-all duration-200 ease-in-out hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-950 sm:text-base dark:hover:bg-blue-600 dark:focus:ring-white"
+              >get started</a
+            ><a
+              href="#"
+              class="flex items-center justify-center bg-transparent text-sm leading-4 text-blue-700 underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-blue-950 sm:text-base"
+              >Get live demo</a
+            >
+          </div>
+          <ul class="mt-[42px] flex items-center gap-4 text-sm">
+            <li class="flex items-center gap-2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  fill="#4CA154"
+                />
+              </svg>
+              No credit card required
+            </li>
+            <li class="flex items-center gap-2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  fill="#4CA154"
+                />
+              </svg>
+              No software to install
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   </body>
 </html>

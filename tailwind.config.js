@@ -3,6 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: "selector",
   theme: {
     extend: {
       colors: {
@@ -18,6 +19,9 @@ module.exports = {
         stone: {
           400: "#909193",
         },
+      },
+      size: {
+        3.5: "14px",
       },
       fontFamily: {
         sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
