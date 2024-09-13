@@ -37,6 +37,7 @@
       href="./images/favicon/favicon.ico"
     />
     <link rel="stylesheet" href="./styles/tailwind.css" />
+    <script src="./index.js" defer type="module"></script>
   </head>
   <body
     class="h-full bg-blue-50 text-base font-semibold text-blue-950/60 dark:bg-blue-950 dark:text-blue-50/50"
@@ -139,24 +140,23 @@
 
             <!-- dark/light toggle -->
             <menu
-              class="hidden h-6 w-12 rounded-full bg-blue-900 px-[.12rem] py-[.2rem] text-blue-50 lg:flex lg:items-center lg:justify-between"
+              class="hidden h-6 w-12 rounded-full bg-blue-900 px-[.12rem] py-[.2rem] lg:flex lg:items-center lg:justify-between"
             >
               <li>
                 <button
+                  data-theme-button="dark"
                   type="button"
-                  class="relative flex size-5 items-center justify-center rounded-full"
-                  aria-controls="mobile-menu"
-                  aria-expanded="false"
+                  class="relative z-0 flex size-5 items-center justify-center rounded-full text-white before:absolute before:-z-10 before:hidden before:h-full before:w-full before:rounded-full before:bg-blue-50 dark:text-blue-900 dark:before:block"
                 >
-                  <span class="absolute -inset-0.5"></span>
-                  <span class="sr-only">Open main menu</span>
+                  <span class="sr-only">Active dark mode</span>
 
                   <svg
                     width="24"
                     height="24"
-                    class="h-4 w-4 fill-current stroke-current"
+                    class="h-4 w-4 select-none fill-current stroke-current"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <path
                       fill-rule="evenodd"
@@ -168,19 +168,18 @@
               </li>
               <li>
                 <button
+                  data-theme-button="light"
                   type="button"
-                  class="relative flex size-5 items-center justify-center rounded-full bg-blue-50 text-blue-900"
-                  aria-controls="mobile-menu"
-                  aria-expanded="false"
+                  class="relative z-0 flex size-5 items-center justify-center rounded-full text-blue-900 before:absolute before:-z-10 before:h-full before:w-full before:rounded-full before:bg-blue-50 dark:text-white dark:before:hidden"
                 >
-                  <span class="absolute -inset-0.5"></span>
-                  <span class="sr-only">Open main menu</span>
+                  <span class="sr-only">Active light mode</span>
                   <svg
                     width="24"
                     height="24"
-                    class="h-4 w-4 fill-current stroke-current"
+                    class="h-4 w-4 select-none fill-current stroke-current"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <circle cx="12" cy="12" r="4" stroke-width="1" />
                     <path
